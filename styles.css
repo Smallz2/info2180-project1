@@ -1,11 +1,76 @@
 /* Add your CSS to this file */
-body {
-    margin: 0;
-    font-size: 16px;
+
+/* --------- Colors --------- */
+:root {
+	--white: #fff;
+	--blue: #5A67D8;
+	--grey: #6b7280;
 }
+
+/* --------- Body --------- */
+body {
+  margin: 0;
+  font-family: apple-system,BlinkMacSystemFont,"SegoeUI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+    'header'
+    'main';	
+}
+
+/* --------- header --------- */
+header {
+	margin: 0px !important;
+	grid-area: header;
+	background: var(--white);
+  box-shadow: 0 1px 6px rgba(0,0,0,.1)
+}
+
+header, .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap
+}
+
+header, h1, a{
+	font-size: 18px;
+}
+
+header, ul {
+	margin: 16px 0 8px;
+	text-align: center;
+	list-style-type: none;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	color: var(--grey);
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 24px;
+}
+
+nav > ul > li, a:hover {
+	color: var(--blue);
+}
+
+
+/* --------- main --------- */
+main {
+  grid-area: main;
+  overflow: auto;
+}
+
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
 }
+
