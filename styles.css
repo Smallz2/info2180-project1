@@ -218,6 +218,13 @@ button {
 	border-radius: 2px;
 }
 
+.message {
+	margin-top: 20px;
+	width: 100%;
+}
+
+
+
 /* --------- Footer --------- */
 
 footer {
