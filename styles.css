@@ -285,3 +285,70 @@ footer {
 a {
 	text-decoration: none;
 }
+
+
+
+/* --------- Media Queries --------- */
+
+
+/* --------- Tablets --------- */
+
+@media (max-width: 796px) {
+	.learn-about {
+		padding: 20px;
+	}
+
+	header > .container > h1 {
+		width: 100%;
+		text-align: center;
+	}
+
+	.overview-hero-image {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* --------- Medium Devices --------- */
+
+@media (max-width: 676px) {
+	.testing-desciption, ul, article .article-body,
+	.newsletter {
+		padding: 0px;
+	}
+
+	.testing, .stories {
+		padding: 40px;
+	}
+
+	article img {
+		display: none;
+	}
+
+	.newsletter > .container {
+		width: 80%;
+		padding-bottom: 50px;
+	}
+
+	input[type=email] {
+		width: 85%;
+	}
+
+	.overview-hero, footer {
+		padding: 20px;
+	}
+
+	footer p {
+		width: 100%;
+		text-align: center;
+	}
+
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+/* --------- Smaller devices --------- */
+
+@media (max-width: 400px) {
+  .cards { grid-template-columns: repeat(1, 1fr); }
+}
